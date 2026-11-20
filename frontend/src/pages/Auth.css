@@ -1,0 +1,131 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.auth-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 16px;
+  background: linear-gradient(135deg, #eef4ff, #f8faff);
+  font-family: Arial, sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 440px;
+  padding: 38px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 45px rgba(40, 70, 120, 0.12);
+}
+
+.auth-icon {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  color: white;
+  background: #315ce8;
+  margin: 0 auto 22px;
+}
+
+.auth-card h1 {
+  font-size: 28px;
+  color: #17243d;
+  text-align: center;
+  margin: 0 0 8px;
+}
+
+.auth-subtitle {
+  color: #778197;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.auth-card label {
+  display: block;
+  color: #34415a;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 17px 0 8px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  border: 1px solid #dce3ef;
+  border-radius: 10px;
+  padding: 0 13px;
+  height: 49px;
+  color: #8290a8;
+}
+
+.input-group:focus-within {
+  border-color: #315ce8;
+  box-shadow: 0 0 0 3px rgba(49, 92, 232, 0.1);
+}
+
+.input-group input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #17243d;
+  background: transparent;
+}
+
+.auth-card button {
+  width: 100%;
+  height: 50px;
+  margin-top: 26px;
+  border: none;
+  border-radius: 10px;
+  background: #315ce8;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-card button:hover {
+  background: #2449c7;
+}
+
+.auth-card button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.auth-message {
+  margin-top: 16px;
+  color: #168653;
+  font-size: 14px;
+  text-align: center;
+}
+
+.auth-footer {
+  margin-top: 24px;
+  text-align: center;
+  color: #778197;
+  font-size: 14px;
+}
+
+.auth-footer a {
+  color: #315ce8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}

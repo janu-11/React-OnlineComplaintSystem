@@ -1,0 +1,201 @@
+
+.welcome-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f3f7ff, #ffffff, #edf4ff);
+  color: #17243d;
+}
+
+.welcome-nav {
+  height: 80px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e7edf5;
+  background: white;
+}
+
+.welcome-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 23px;
+  font-weight: 800;
+  color: #3157d5;
+}
+
+.welcome-tagline {
+  color: #718096;
+  font-size: 13px;
+}
+
+.welcome-content {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 25px 35px;
+}
+
+.welcome-heading {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 45px;
+}
+
+.welcome-badge {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #e5edff;
+  color: #3157d5;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.welcome-heading h1 {
+  font-size: clamp(35px, 5vw, 55px);
+  line-height: 1.15;
+  margin: 22px 0;
+}
+
+.welcome-heading h1 span {
+  color: #3157d5;
+}
+
+.welcome-heading p {
+  color: #718096;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.portal-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.portal-card {
+  background: white;
+  border: 1px solid #e4eaf3;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 12px 35px rgba(32, 55, 100, 0.07);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.portal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(32, 55, 100, 0.12);
+}
+
+.portal-icon {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.citizen-icon {
+  background: #e8f8ef;
+  color: #159957;
+}
+
+.admin-icon {
+  background: #e9edff;
+  color: #3157d5;
+}
+
+.portal-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #8491a5;
+}
+
+.portal-card h2 {
+  font-size: 25px;
+  margin: 12px 0;
+}
+
+.portal-card p {
+  min-height: 75px;
+  color: #718096;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.portal-button {
+  width: 100%;
+  padding: 14px 18px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.citizen-button {
+  background: #159957;
+}
+
+.admin-button {
+  background: #3157d5;
+}
+
+.portal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 22px;
+  color: #718096;
+  font-size: 12px;
+}
+
+.portal-footer button {
+  border: none;
+  background: transparent;
+  color: #3157d5;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.welcome-bottom {
+  margin-top: 45px;
+  text-align: center;
+  color: #8793a6;
+  font-size: 13px;
+}
+
+@media (max-width: 650px) {
+  .welcome-nav {
+    padding: 0 20px;
+  }
+
+  .welcome-tagline {
+    display: none;
+  }
+
+  .welcome-content {
+    padding-top: 40px;
+  }
+
+  .portal-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-card {
+    padding: 25px;
+  }
+}
